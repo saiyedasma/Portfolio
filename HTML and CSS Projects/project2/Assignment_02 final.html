@@ -1,0 +1,166 @@
+<!DOCTYPE.html><html>
+<head>
+<title></title>
+<header>
+	<h3> <span style="float:left;"> SYST10049 Web Development </span></h3>
+    <span style="margin-left: 80px; margin-right: 80px;"><b>Instructor: Amandeep.S.Patti</b></span>
+    <span><b>Assigmment 2</b></span>
+	<!--  <h3> <span style="float:left;"> Student Name: Asmabanu Saiyed </span></h3>
+    <span style="margin-left: 80px; margin-right: 80px;"><b>Student Registration Number: 991578249</b></span>  -->
+</header>
+<style>
+	 header{
+       clear: both;
+       text-align: center;
+     }
+
+ul.menu{
+    list-style-type:none;
+       }
+  ul.menu li {
+            display:inline-block;
+            border:1px.solid white;
+			      width:100px;
+
+             }
+  ul.menu li a {
+        	display:block;
+			   background-color:black;
+			   padding:3px 6px;
+			   text-decoration:none;
+			   color:aliceblue;
+               }
+ul.menu li a:hover,ul.menu li a.current{
+                    text-decoration:underline;
+									  background-color:blue;
+									  color:white;
+                                     }
+
+
+
+ul#side_menu{
+   list-style-type:none;
+		border:3px solid black;
+      }
+ ul#side_menu li {
+           display:block;
+           border:1px.solid white;
+			      width:100px;
+
+            }
+ ul#side_menu li a {
+       	display:block;
+			   background-color:black;
+			   padding:3px 6px;
+			   text-decoration:none;
+			   color:aliceblue;
+				 margin-top: 10px;
+              }
+ul#side_menu li a:hover,ul.menu li a.current{
+                   text-decoration:underline;
+									  background-color:blue;
+									  color:white;
+                                    }
+body {
+    margin :5%;
+	  padding:0;
+	  height:50%;
+	  max-height:50%;
+	  overflow:hidden;
+     }
+*{
+	box-sizing: border-box;
+}
+
+.product{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.product img{
+	height: 200px;
+}
+
+}
+footer{
+       text-align: center;
+			 display: inline;
+			 text-align: center;
+     }
+ nav{
+			float:left;
+			width: 200px;
+			height: 100%;
+			border: 1px solid red;
+			margin-left: 15%;
+		}
+
+		#Top_bar {
+			border: 3px solid black;
+			padding: 10px 0px 25px 10px ;
+			margin: 1px;
+		}
+
+.scrollingsection{
+	height: 300px;
+	overflow-y: auto;
+}
+img{
+	height: 200px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+	  <div id="Top_bar" ><!-- This is Divistion for Logo and horizontal menu -->
+			<div ><!-- This is a div for logo -->
+				<img style="float: left; width: 20%;  border: 3px solid black;" src="http://logok.org/wp-content/uploads/2014/04/Apple-logo-grey-880x625.png" >
+			</div>
+			<div><!-- This is a div for Company name and  -->
+				<center>
+					<h2>Apple</h2>
+			    <h4>Think different</h4>
+					<br>
+				<ul class ="menu">
+				 <li> <a href ="#">Home</a></li>
+				 <li> <a class ="current" href ="#">Product</a></li>
+				 <li> <a href ="#">About Us</a></li>
+				 <li><a href ="#">Contact Us</a></li>
+			 </ul>
+				</center>
+			</div>
+		</div>
+<div style="float: left; width: 300px; ">
+	<center>
+		<ul Id = "side_menu" style="height: 300px;">
+		 <li> <a href ="#">Phone</a></li>
+		 <li> <a class ="current" href ="#">Desktops</a></li>
+		 <li> <a href ="#">Ipads</a></li>
+		 <li><a href ="#">Airpods</a></li>
+	 </ul>
+	</center>
+</div>
+
+
+<section class="scrollingsection">
+<center>
+	<h3> products </h3>
+</center>
+<div class="product">
+<img src="https://www.pngmart.com/files/13/iPhone-12-PNG-Free-Download.png" alt="iphone" >
+<img src="https://png2.cleanpng.com/sh/ae89dcc017520fd5e6d5b4920ea17361/L0KzQYm3UsA5N5D7fZH0aYP2gLBuTfluaZQyhdNsYnBye373kv8udZJoetH4az3kecO0jf9kc6Z1Rd9qYz3kgMHzhb1taaNsfZ8AYUfmSLS7VMk5bZI5TZCCMEWzQYO7WcE2OWk2SaMDMUK5Qoe7TwBvbz==/kisspng-imac-macbook-pro-macbook-air-mockup-mac-apple-large-5a7c8c4498ea45.7050124915181118126264.png" alt="desktop">
+<img src="https://e7.pngegg.com/pngimages/1021/853/png-clipart-ipad-3-ipad-mini-3-ipad-mini-2-ipad-air-2-apple-gadget-electronics.png">
+<img src="https://spng.pngfind.com/pngs/s/180-1803624_2014-apple-watch-hd-png-download.png"alt="Apple watch">
+<img src="https://image.pngaaa.com/918/802918-middle.png"alt="airpods">
+<img src="https://w7.pngwing.com/pngs/918/793/png-transparent-macbook-pro-13-inch-macbook-air-laptop-macbook-gadget-electronics-laptop.png"alt="macbook">
+</div>
+</section>
+
+</body>
+<div>
+	<footer class="AppleCopyright" style="text-align:center;height:20px" title="footer">2021 Copyright</footer>
+</div>
+</html>

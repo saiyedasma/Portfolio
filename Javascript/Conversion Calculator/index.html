@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASmabanu Saiyed</title>
+    <style>
+         #Length{
+             text-align: center;
+
+         }
+        h1{
+            text-align: center;
+            background-color: bisque;
+            color: rgba(8, 6, 6, 0.89);
+            border: 1px solid white;
+        }
+       div{
+           border: 20px;
+           padding:20px;
+           font-size: 20px;
+           text-align: center;
+       }
+       input [type=text]{
+           width: 30%;
+           padding: 10px 20px;
+           box-sizing: border-box;
+           border-color:1px solid brown;
+           text-align: center;
+           
+
+       }
+       .button{
+           background-color:rgb(255, 217, 0);
+           color: black;
+           text-align: center;
+           font-size: 16px;
+           text-align: center;
+       }
+    </style>
+    
+</head>
+<body>
+    <heading><h1 class="center">
+        Assignment 2<br>
+                 Web Programming <br>
+                 Asmabanu Saiyed
+             </h1></heading>
+             <div class="center">
+             <input type ="text" id="Length">
+             <button >clear</button>
+            </div>
+             <div>
+                 <button class ="button" onfocus="this.value=''" onclick="cmToInches(document.getElementById('Length').value)">cmToInches</button>
+                 <p id ="p1"></p>
+             </div>
+             <div>
+                 <button class ="button" onfocus="this.value=''" onclick="InchesTocm(document.getElementById('Length').value)">InchesTocm</button>
+                 <p id ="p2"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="cmToMeter(document.getElementById('Length').value)">cmToMeter</button>
+                <p id ="p3"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="MeterTocm(document.getElementById('Length').value)">MeterTocm</button>
+                <p id ="p4"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="InchesToMeter(document.getElementById('Length').value)">InchesToMeter</button>
+                <p id ="p5"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="MeterToInches(document.getElementById('Length').value)">MeterToInches</button>
+                <p id ="p6"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="MeterToFeet(document.getElementById('Length').value)">MeterToFeet</button>
+                <p id ="p7"></p>
+             </div>
+             <div>
+                <button class ="button"onfocus="this.value=''" onclick="FeetToMeter(document.getElementById('Length').value)">FeetToMeter</button>
+                <p id ="p8"></p>
+             </div>
+             <script src="_scripts/script.js"> </script> 
+             <script src="_scripts/script1.js"></script>
+             <script src="_scripts/script2.js"></script>
+             <script src="_scripts/script3.js"></script>
+             <script src="_scripts/script4.js"></script>
+</body>
+</html>

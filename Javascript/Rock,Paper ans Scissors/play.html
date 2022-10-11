@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .magic{
+      font-size: 35px;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <title>Assignment-1</title>
+</head>
+<body>
+  <a href="index.html" target="A_Saiyed"><input type="button" value="EXIT GAME" class="magic"></a>
+  <script>
+    // variable declared to store
+    var c = 0,u = 0;
+    // prompt the user to input 1,2 and 3
+    play();
+    function play()
+ {
+
+        var userinput= prompt("Enter your choice \n\n\nPress 1 to select ROCK\nPress 2 to select PAPER\nPress 3 to select SCISSORS","Enter number between 1-3");
+       if (userinput > 3)
+        {
+          play();
+        }
+ else{
+         var comp = Math.floor(Math.random() * 3) + 1;
+         if (comp == 1 && userinput ==2)
+        {
+        u++;
+        alert("Computer selected" + comp + "You selected " + userinput +"You Won" + u +"Computer" +c);
+        playagain();
+        }
+        
+        else if(comp == 1 && userinput ==3)
+        {
+        c++;
+        alert("Computer selected"+ comp +"You selected" + userinput +"Computer" + c + "You Loss" + u);
+        playagain();
+        } 
+        else if (comp == 2 && userinput == 1)
+        { 
+        c++;
+        alert("Computer selected" + comp + "You selected"+ userinput + "You Loss" + u + "computer" + c);
+        playagain();
+        }
+        else if(comp == 2 && userinput ==3)
+        {
+        u++;
+        alert("Computer selected" +comp +"You selected" + userinput + "You Won" + u +"computer" + c);
+        playagain();
+        }
+        else if (comp== 3 && userinput== 1)
+        { 
+         u++;
+         alert("Computer selected" +comp +"You selected"+ userinput + "You Won" + u +"computer"+ c);
+         playagain();
+        }
+        else if(comp == 3 && userinput == 2)
+        {
+        c++
+        alert("Computer selected" + comp +"You selected"+ userinput +"You Loss"+ u +"computer"+c);
+        playagain();
+        }
+        else if(comp == userinput)
+        {
+        alert("DRAW \n\n You:" + u +"\nComputer:" + c);
+        playagain()
+      }
+
+    }
+  }
+  function playagain()
+    {
+     if (confirm("Do you want to play again??"))
+     {
+       play()
+     }
+     else
+     {
+       if (c > u)
+       {
+         alert("Your Score:" + u + "\nComputer Score" + c +"\n\nComputer Win")
+       }
+       else
+       {
+         alert("Your Score:" + u +"\nComputer Score"+c +"\n\nYou Win")
+       }
+       alert("Game End and Final Score is\n\n You:" +u +"Computer:" +c);
+       document.getElementById("exit").innerHTML = "Exit";
+     }
+
+    }
+
+  </script>
+  
+  
+  
+</body>
+</html>

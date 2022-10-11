@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form action="welcome.html" name="myForm">
+        <label>Enter your name: <input type="text" id="name"></label>
+        <span id="nameError"></span>
+        
+        <br><br>
+        <label>password: <input type="text" id="password"></label>
+        <span id="passwordError"></span>
+        
+        <br><br>
+        <label>Confirm password: <input type="text" id="password2"></label>
+        <span id="password2Error"></span>
+        
+        <br><br>
+
+        <label>Address: <input type="text" id="address"></label>
+        <span id="addressError"></span>
+        
+        <br><br>
+
+        Select course:
+            <select id="course">
+                <option value="-1">Select course</option>
+                <option value="History">History</option>
+                <option value="computer">computer</option>
+                <option value="Math">Math</option>
+                <option value="english">english</option>
+            </select>
+            <span id="courseError"></span>
+            
+            <br><br>
+            Select city:
+            <select id="city">
+                <option value="-3">Select city</option>
+                <option value="city-1">Hamilton</option>
+                <option value="city-2">Brampton</option>
+                <option value="city-3">Milton</option>
+                <option value="city-4">Toronto</option>
+            </select>
+            <span id="cityError"></span>
+
+            <input type="submit" id="submit">
+            </form>
+            <script src="_script/script.js"></script>
+</body>
+</html>
